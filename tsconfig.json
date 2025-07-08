@@ -1,0 +1,64 @@
+// Shared config for client and server only
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		// Add this to force consistent module resolution
+		"resolveJsonModule": true,
+		"allowJs": true,
+		
+		/* Base Options */
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"target": "ES2022",
+		"moduleDetection": "force",
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		/* Module */
+		"composite": true,
+		"forceConsistentCasingInFileNames": true,
+		"emitDeclarationOnly": true,
+		"allowImportingTsExtensions": false,
+		"jsx": "react-jsx",
+		/* Strictness & Rules */
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+		"useDefineForClassFields": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		/* Paths */
+		"baseUrl": ".",
+		"paths": {
+			"~client/*": [
+				"./client/src/*"
+			],
+			"~server/*": [
+				"./server/src/*"
+			],
+			"~shared/*": [
+				"./shared/src/*"
+			],
+			"~app/*": [
+				"./app/*"
+			]
+		}
+	},
+	"exclude": [
+		"**/node_modules",
+		"**/dist"
+	],
+	"files": [],
+	"references": [
+		{
+			"path": "./client/tsconfig.json"
+		},
+		{
+			"path": "./server/tsconfig.json"
+		},
+		{
+			"path": "./shared/tsconfig.json"
+		}
+	]
+}

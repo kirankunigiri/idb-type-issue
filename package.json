@@ -1,0 +1,38 @@
+{
+	"name": "cleave",
+	"private": true,
+	"type": "module",
+	"workspaces": [
+		"shared",
+		"app"
+	],
+	"scripts": {
+		"dev": "bun --filter '*' dev",
+		"dev:app": "cd app && bun dev",
+		"dev:server": "cd server && bun dev",
+		"reset-node": "rm -rf node_modules && rm -rf app/node_modules && rm -rf server/node_modules && bun i"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.29.0",
+		"@stylistic/eslint-plugin": "^4.4.1",
+		"@types/eslint__js": "^9.14.0",
+		"dotenv-cli": "^8.0.0",
+		"eslint": "^9.29.0",
+		"eslint-plugin-jsonc": "^2.20.1",
+		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.20",
+		"eslint-plugin-simple-import-sort": "^12.1.1",
+		"eslint-plugin-tailwindcss": "^3.18.0",
+		"globals": "^16.2.0",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.34.1",
+		"wrangler": "^4.20.3"
+	},
+	"trustedDependencies": [
+		"@swc/core",
+		"esbuild",
+		"sharp",
+		"workerd"
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"name": "shared",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"@instantdb/core": "^0.20.6"
+	},
+	"devDependencies": {
+		"typescript": "^5.8.3"
+	}
+}
